@@ -32,8 +32,16 @@ An example flow between two users:
 	* Alice's state is updated
 * This repeats until the game is finished
 
-### Shared Todo
+### Shared todo
 
 Todo apps are the quintessential example in recent times. The same architecture above can work for a shared todo app. Each user has a UI which shows them the current state. Each user can take actions in the UI which are sent to the other user(s).
 
 The application developer need only build the UI and business logic to deal with incoming events. 
+
+## Existing solutions
+
+We aim to build on top of existing stacks. Most importantly, on top of existing social networks. SSB is the first such network we have found, but other end-to-end encrypted communication networks will also be suitable. Ideally we envisage supporting transport layers like [Signal](https://signal.org), [Matrix](https://matrix.org), and [Telegram](https://telegram.org).
+
+## Success definition
+
+This project will succeed if an app developer can write only business logic and user interface code and then deploy their application with multi user support.
